@@ -21,7 +21,7 @@ if not github_token:
 
 # Create Github instance
 try:
-    g = Github("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")
+    g = Github("")
     # Test connection
     user = g.get_user()
     logger.info(f"Successfully authenticated as {user.login}")
