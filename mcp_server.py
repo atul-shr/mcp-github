@@ -12,12 +12,12 @@ logger = logging.getLogger(__name__)
 # Load environment variables
 load_dotenv()
 
-# Initialize GitHub client
-github_token = os.getenv('GITHUB_TOKEN')
-logger.debug(f"Raw token from env: {github_token}")
+# # Initialize GitHub client
+# github_token = os.getenv('GITHUB_TOKEN')
+# logger.debug(f"Raw token from env: {github_token}")
 
-if not github_token:
-    raise ValueError("GitHub token not found. Please set GITHUB_TOKEN in .env file")
+# if not github_token:
+#     raise ValueError("GitHub token not found. Please set GITHUB_TOKEN in .env file")
 
 # Create Github instance
 try:
